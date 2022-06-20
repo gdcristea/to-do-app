@@ -25,9 +25,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](/to-do-app/screenshot/screenshot1.png)
-![](/to-do-app/screenshot/screenshot2.png)
-![](/to-do-app/screenshot/screenshot3.png)
+![](screenshot/screenshot1.png)
+![](screenshot/screenshot2.png)
+![](screenshot/screenshot3.png)
 
 ### Links
 
