@@ -35,11 +35,13 @@
   <body>
     <div class="banner">
       <img
+        role="banner image"
         class="bannerImgMobile"
         src="images/bg-mobile-dark.jpg"
         alt="banner-img"
       />
       <img
+        role="banner image"
         class="bannerImgDesktop"
         src="images/bg-desktop-dark.jpg"
         alt="banner-img"
@@ -49,7 +51,7 @@
     <div class="wrapper">
       <header>
         <h1>todo</h1>
-        <button class="switchBtn"></button>
+        <button aria-label="toggle light and dark mode" class="switchBtn"></button>
       </header>
 
       <main>
@@ -83,7 +85,9 @@
         </div>
       </footer>
 
-      <p class="dragAndDrop">Drag and drop to reorder list</p>
+      <p role="drag and drop todos" class="dragAndDrop">
+        Drag and drop to reorder list
+      </p>
     </div>
     <script src="script.js"></script>
   </body>
