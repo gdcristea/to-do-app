@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>To Do App</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Sortable -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"
+      integrity="sha512-Eezs+g9Lq4TCCq0wae01s9PuNWzHYoCMkE97e2qdkYthpI0pzC3UGB03lgEHn2XM85hDOUF6qgqqszs+iXU4UA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <div class="banner">
+      <img
+        class="bannerImgMobile"
+        src="images/bg-mobile-dark.jpg"
+        alt="banner-img"
+      />
+      <img
+        class="bannerImgDesktop"
+        src="images/bg-desktop-dark.jpg"
+        alt="banner-img"
+      />
+    </div>
+
+    <div class="wrapper">
+      <header>
+        <h1>todo</h1>
+        <button class="switchBtn"></button>
+      </header>
+
+      <main>
+        <div class="input">
+          <div class="toDoCheck"></div>
+          <input type="text" placeholder="Create a new todo..." />
+        </div>
+
+        <div class="listOfToDo"></div>
+
+        <div class="listOfToDoFooter">
+          <div><span id="numberOfTodos"></span><span>items left</span></div>
+
+          <div>
+            <span id="clearCompleted">Clear Completed</span>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="numberOfTodos2-container">
+          <span id="numberOfTodos2"></span><span>items left</span>
+        </div>
+        <div class="filterList">
+          <span id="allTodos" class="active">All</span>
+          <span id="activeTodos">Active</span>
+          <span id="completedAll">Completed</span>
+        </div>
+        <div class="clearCompleted2-container">
+          <span id="clearCompleted2">Clear Completed</span>
+        </div>
+      </footer>
+
+      <p class="dragAndDrop">Drag and drop to reorder list</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
