@@ -85,7 +85,7 @@ listOfToDo.addEventListener("click touchstart", (event) => {
 });
 
 //Delete todos from the list
-listOfToDo.addEventListener("click touchstart", (event) => {
+listOfToDo.on("click touchstart", (event) => {
   if (event.target.className === "iconCross") {
     removeTodoItem(event.target.parentElement);
   }
