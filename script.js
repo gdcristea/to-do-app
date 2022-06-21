@@ -57,7 +57,7 @@ function setNumberOfTodos(number) {
 }
 
 // Mark todos as complete
-listOfToDo.addEventListener("click touchstart", (event) => {
+listOfToDo.addEventListener("click", (event) => {
   if (event.target.classList.contains("toDoCheck")) {
     const todoText = event.target.nextElementSibling;
     const todoCheck = event.target;
@@ -85,7 +85,7 @@ listOfToDo.addEventListener("click touchstart", (event) => {
 });
 
 //Delete todos from the list
-listOfToDo.on("click touchstart", (event) => {
+listOfToDo.on("click", (event) => {
   if (event.target.className === "iconCross") {
     removeTodoItem(event.target.parentElement);
   }
