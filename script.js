@@ -21,10 +21,10 @@ function createNewTodo(text) {
 
   element.innerHTML = `
   <div>
-    <button onclick="void(0)" class="toDoCheck"></button>
+    <button class="toDoCheck"></button>
     <p class="toDoText">${text}</p>
   </div>
-  <img onclick="void(0)" class="iconCross" src="images/icon-cross.svg" alt="">
+  <img class="iconCross" src="images/icon-cross.svg" alt="">
   `;
 
   if (document.querySelector(".active").id === "completedAll") {
