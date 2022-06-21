@@ -85,7 +85,7 @@ listOfToDo.addEventListener("click", (event) => {
 });
 
 //Delete todos from the list
-listOfToDo.on("click", (event) => {
+listOfToDo.addEventListener("click", (event) => {
   if (event.target.className === "iconCross") {
     removeTodoItem(event.target.parentElement);
   }
